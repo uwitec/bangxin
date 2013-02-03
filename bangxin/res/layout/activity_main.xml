@@ -5,10 +5,56 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+login_layout/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
+        android:text="帮信"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+login_layout/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@login_layout/tv_title"
+        android:layout_marginTop="30dip"
+        android:text="用户名" />
+
+    <EditText
+        android:id="@+login_layout/et_username"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@login_layout/tv_title"
+        android:layout_toRightOf="@login_layout/tv_username" />
+
+    <TextView
+        android:id="@+login_layout/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@login_layout/tv_username"
+        android:layout_marginTop="30dip"
+        android:text="密    码" />
+
+    <EditText
+        android:id="@+login_layout/et_password"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@login_layout/tv_username"
+        android:layout_toRightOf="@login_layout/tv_password"
+        android:password="true" />
+
+    <Button
+        android:id="@+login_layout/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"  android:layout_alignParentBottom="true" />
+    <Button
+        android:id="@+login_layout/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登陆"  android:layout_centerInParent="true" />
 
 </RelativeLayout>
